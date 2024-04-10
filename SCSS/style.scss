@@ -1,0 +1,444 @@
+$Color-boton: hsl(171, 66%, 44%);
+$Color-boton2: hsl(233, 100%, 69%);
+$Color-titulo: hsl(210, 10%, 33%);
+$Color-parrafo: hsl(201, 11%, 66%);
+
+%valor-imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-style: normal;
+    background-image: url("../Imagenes/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    text-align: center;
+
+    main {
+        padding: 2.7rem;
+        margin-bottom: 15rem;
+
+        .figure-logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 8rem;
+            margin-bottom: 7rem;
+
+            img {
+                width: 10rem;
+            }
+        }
+    }
+}
+
+.section-first {
+    margin-bottom: 3rem;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: $Color-titulo;
+    }
+
+    p {
+        color: $Color-parrafo;
+        font-size: 16.7px
+    }
+}
+
+button {
+    width: 100%;
+    border-radius: 3.5rem;
+    height: 5rem;
+    color: hsl(256, 0%, 256%);
+}
+
+.botton-one {
+    background-color: $Color-boton;
+    box-shadow: 0px 7px 20px -5px $Color-boton;
+    border-color: $Color-boton;
+
+}
+
+.botton-two {
+    background-color: $Color-boton2;
+    margin-top: 2rem;
+    border-color: $Color-boton2;
+}
+
+.section-two {
+    margin-top: 15rem;
+    margin-bottom: 7rem;
+
+    h2 {
+        color: $Color-titulo;
+        font-size: 2.5rem;
+        margin-bottom: 1.9rem;
+    }
+
+    p {
+        color: $Color-parrafo;
+        font-size: 16.7px;
+        line-height: 2.5rem;
+        font-weight: 400;
+    }
+}
+
+.figure-desktop {
+    @extend %valor-imagen;
+}
+
+.section-three {
+    h2 {
+        color: $Color-titulo;
+        margin-bottom: 1.4rem;
+    }
+
+    p {
+        color: $Color-parrafo;
+        margin-bottom: 5rem;
+        font-size: 1.7rem;
+    }
+}
+
+.section-four {
+    margin-top: 20rem;
+
+    h2 {
+        color: $Color-titulo;
+        margin-bottom: 1.4rem;
+        font-size: 2.8rem;
+    }
+
+    p {
+        color: $Color-parrafo;
+        margin-bottom: 5rem;
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+    }
+}
+
+.figure-mobile {
+    @extend %valor-imagen;
+}
+
+.section-five {
+    h2 {
+        color: $Color-titulo;
+        margin-top: 10rem;
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: $Color-parrafo;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+    h3 {
+        color: $Color-titulo;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    div {
+        margin-top: 4.5rem;
+
+        figure {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+.section-imagenes {
+    margin-top: 15rem;
+
+    figure {
+        margin-top: 5.5rem;
+    }
+}
+
+.section-six {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+
+    h2 {
+        color: $Color-titulo;
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: $Color-parrafo;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+}
+
+footer {
+    background-color: hsl(0, 0%, 93%);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+
+        img {
+            width: 5rem;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        color: $Color-titulo;
+
+        ul li {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            list-style: none;
+            font-weight: 400;
+        }
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 3rem;
+
+        img {
+            width: 2rem;
+            margin: 0rem 2rem;
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media (min-width: 375px) {
+    body {
+        background-image: url("../Imagenes/bg-header-desktop.png");
+    }
+
+}
+
+@media (min-width: 1240px) {
+    body {
+        background-image: url("../Imagenes/bg-header-desktop.png");
+    }
+
+    .section-first {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 5rem;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    button {
+        width: 200px;
+        margin: 0rem 1.5rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .botton-one:hover {
+        background-color: hsla(171, 66%, 44%, 0.765);
+    }
+
+    .botton-two:hover {
+        background-color: hsla(233, 100%, 69%, 0.765);
+    }
+
+    .section-two {
+        width: 700px;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    .figure-desktop {
+        margin-left: -5rem;
+        display: flex;
+        justify-content: left;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .section-three {
+        margin: 0;
+        transform: translate(75rem, -50rem);
+        text-align: left;
+        width: 355px;
+
+        p {
+            font-size: 1.7rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    .section-four {
+        width: 700px;
+        margin: auto;
+        margin-top: -35rem;
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    .figure-mobile {
+        img {
+            width: 850px
+        }
+    }
+
+    .section-five {
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        margin-top: -10rem;
+        justify-content: center;
+
+        .section-five__parrafo {
+            grid-column: 1 / span 3;
+            margin: 0;
+
+            p {
+                margin-bottom: 4rem;
+            }
+        }
+
+        div {
+            margin: 3rem 1rem;
+        }
+    }
+
+    .section-imagenes {
+        display: grid;
+        grid-template-columns: repeat(5, 240px);
+        justify-content: center;
+    }
+
+    .section-six {
+        width: 700px;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 400px 700px 150px;
+        align-items: center;
+        .footer-logo{
+            margin-bottom: 0;
+            height: 100%;
+            img{
+                height: 5rem ;
+            }
+        }
+        nav {
+            text-align: left;
+            justify-content: left;
+            margin-bottom: 0;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(3, 150px);
+                li:nth-child(2){
+                    order: 1;
+                }
+                li:nth-child(4){
+                    order: 2;
+                }
+                li:hover{
+                    cursor: pointer;
+                    color: $Color-boton;
+                }
+            }
+
+        }
+        .redes-sociales{
+            align-items: center;
+            height: 100%;
+            margin-bottom: 0;
+            object-fit: cover;
+        }
+
+        .redes-sociales figure img:hover {
+            cursor: pointer;
+        }
+       
+        .attribution{
+            grid-column: 1/span 3;
+            margin-top: 4rem;
+        }
+        
+    }
+    
+}

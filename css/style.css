@@ -1,0 +1,364 @@
+.figure-mobile, .figure-desktop {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.figure-mobile img, .figure-desktop img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-style: normal;
+  background-image: url("../Imagenes/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+body main {
+  padding: 2.7rem;
+  margin-bottom: 15rem;
+}
+body main .figure-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 7rem;
+}
+body main .figure-logo img {
+  width: 10rem;
+}
+
+.section-first {
+  margin-bottom: 3rem;
+}
+.section-first h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: hsl(210, 10%, 33%);
+}
+.section-first p {
+  color: hsl(201, 11%, 66%);
+  font-size: 16.7px;
+}
+
+button {
+  width: 100%;
+  border-radius: 3.5rem;
+  height: 5rem;
+  color: hsl(256, 0%, 100%);
+}
+
+.botton-one {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 7px 20px -5px hsl(171, 66%, 44%);
+  border-color: hsl(171, 66%, 44%);
+}
+
+.botton-two {
+  background-color: hsl(233, 100%, 69%);
+  margin-top: 2rem;
+  border-color: hsl(233, 100%, 69%);
+}
+
+.section-two {
+  margin-top: 15rem;
+  margin-bottom: 7rem;
+}
+.section-two h2 {
+  color: hsl(210, 10%, 33%);
+  font-size: 2.5rem;
+  margin-bottom: 1.9rem;
+}
+.section-two p {
+  color: hsl(201, 11%, 66%);
+  font-size: 16.7px;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+.section-three h2 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.4rem;
+}
+.section-three p {
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 5rem;
+  font-size: 1.7rem;
+}
+
+.section-four {
+  margin-top: 20rem;
+}
+.section-four h2 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.4rem;
+  font-size: 2.8rem;
+}
+.section-four p {
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 5rem;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+}
+
+.section-five h2 {
+  color: hsl(210, 10%, 33%);
+  margin-top: 10rem;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.section-five p {
+  color: hsl(201, 11%, 66%);
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+.section-five h3 {
+  color: hsl(210, 10%, 33%);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.section-five div {
+  margin-top: 4.5rem;
+}
+.section-five div figure {
+  margin-bottom: 2.5rem;
+}
+
+.section-imagenes {
+  margin-top: 15rem;
+}
+.section-imagenes figure {
+  margin-top: 5.5rem;
+}
+
+.section-six {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+.section-six h2 {
+  color: hsl(210, 10%, 33%);
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.section-six p {
+  color: hsl(201, 11%, 66%);
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+footer {
+  background-color: hsl(0, 0%, 93%);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+footer .footer-logo img {
+  width: 5rem;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  color: hsl(210, 10%, 33%);
+}
+footer nav ul li {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  list-style: none;
+  font-weight: 400;
+}
+footer .redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+footer .redes-sociales img {
+  width: 2rem;
+  margin: 0rem 2rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("../Imagenes/bg-header-desktop.png");
+  }
+}
+@media (min-width: 1240px) {
+  body {
+    background-image: url("../Imagenes/bg-header-desktop.png");
+  }
+  .section-first {
+    width: 700px;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .section-first h1 {
+    font-size: 4rem;
+  }
+  .section-first p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  button {
+    width: 200px;
+    margin: 0rem 1.5rem;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .botton-one:hover {
+    background-color: hsla(171, 66%, 44%, 0.765);
+  }
+  .botton-two:hover {
+    background-color: hsla(233, 100%, 69%, 0.765);
+  }
+  .section-two {
+    width: 700px;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .section-two h2 {
+    font-size: 3.5rem;
+  }
+  .section-two p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  .figure-desktop {
+    margin-left: -5rem;
+    display: flex;
+    justify-content: left;
+  }
+  .figure-desktop img {
+    width: 50%;
+  }
+  .section-three {
+    margin: 0;
+    transform: translate(75rem, -50rem);
+    text-align: left;
+    width: 355px;
+  }
+  .section-three p {
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+  }
+  .section-four {
+    width: 700px;
+    margin: auto;
+    margin-top: -35rem;
+  }
+  .section-four h2 {
+    font-size: 3.5rem;
+  }
+  .section-four p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  .figure-mobile img {
+    width: 850px;
+  }
+  .section-five {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    margin-top: -10rem;
+    justify-content: center;
+  }
+  .section-five .section-five__parrafo {
+    grid-column: 1/span 3;
+    margin: 0;
+  }
+  .section-five .section-five__parrafo p {
+    margin-bottom: 4rem;
+  }
+  .section-five div {
+    margin: 3rem 1rem;
+  }
+  .section-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 240px);
+    justify-content: center;
+  }
+  .section-six {
+    width: 700px;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  .section-six h2 {
+    font-size: 3.5rem;
+  }
+  .section-six p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 400px 700px 150px;
+    align-items: center;
+  }
+  footer .footer-logo {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  footer .footer-logo img {
+    height: 5rem;
+  }
+  footer nav {
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 0;
+  }
+  footer nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+  }
+  footer nav ul li:nth-child(2) {
+    order: 1;
+  }
+  footer nav ul li:nth-child(4) {
+    order: 2;
+  }
+  footer nav ul li:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+  }
+  footer .redes-sociales {
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .redes-sociales figure img:hover {
+    cursor: pointer;
+  }
+  footer .attribution {
+    grid-column: 1/span 3;
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
